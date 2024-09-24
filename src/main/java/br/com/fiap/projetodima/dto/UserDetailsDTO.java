@@ -5,4 +5,5 @@ public record UserDetailsDTO(
         String name,
         String email
 ) {
+
 }
