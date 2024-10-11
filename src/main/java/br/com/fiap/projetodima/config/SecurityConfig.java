@@ -21,10 +21,7 @@ public class SecurityConfig {
         http.csrf(csrf -> csrf.disable());
         http.authorizeHttpRequests(auth ->
                 auth
-                        .requestMatchers(HttpMethod.POST, "/login").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/users").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/livros").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/livros/{name}").permitAll()
+                        .anyRequest().permitAll()
         );
         http.addFilterBefore(authorizationFilter, UsernamePasswordAuthenticationFilter  .class);
         return http.build();

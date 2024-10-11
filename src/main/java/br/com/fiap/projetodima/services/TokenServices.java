@@ -1,7 +1,6 @@
 package br.com.fiap.projetodima.services;
 
 import br.com.fiap.projetodima.model.User;
-import br.com.fiap.projetodima.repositories.UserRepository;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTCreationException;
